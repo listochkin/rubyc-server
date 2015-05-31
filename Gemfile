@@ -31,4 +31,4 @@ group :development, :test do
 end
 
 gem 'rails-api'
-gem 'active_model_serializers'
+gem 'active_model_serializers', git: 'https://github.com/rails-api/active_model_serializers'
