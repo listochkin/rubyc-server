@@ -44,6 +44,7 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     arel (6.0.0)
+    bcrypt (3.1.10)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     builder (3.2.2)
@@ -51,11 +52,16 @@ GEM
       columnize (= 0.9.0)
     columnize (0.9.0)
     debug_inspector (0.0.2)
+    doorkeeper (3.0.0.rc1)
+      railties (>= 3.2)
+    doorkeeper-jwt (0.1.4)
+      jwt (~> 1.4, >= 1.4.1)
     erubis (2.7.0)
     globalid (0.3.5)
       activesupport (>= 4.1.0)
     i18n (0.7.0)
     json (1.8.2)
+    jwt (1.5.0)
     loofah (2.0.2)
       nokogiri (>= 1.5.9)
     mail (2.6.3)
@@ -120,7 +126,10 @@ PLATFORMS
 
 DEPENDENCIES
   active_model_serializers!
+  bcrypt (~> 3.1.7)
   byebug
+  doorkeeper
+  doorkeeper-jwt
   rack-cors
   rails (= 4.2.1)
   rails-api

@@ -1,4 +1,5 @@
 class TasksController < ApplicationController
+  before_action :doorkeeper_authorize! # Require access token for all actions
   before_action :set_task, only: [:show, :update, :destroy]
 
   # GET /tasks

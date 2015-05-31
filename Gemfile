@@ -11,7 +11,7 @@ gem 'sqlite3'
 # gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
@@ -34,3 +34,5 @@ gem 'rails-api'
 gem 'active_model_serializers', git: 'https://github.com/rails-api/active_model_serializers'
 gem 'rack-cors', require: "rack/cors"
 
+gem 'doorkeeper'
+gem 'doorkeeper-jwt'
