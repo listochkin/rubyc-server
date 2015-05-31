@@ -32,3 +32,5 @@ end
 
 gem 'rails-api'
 gem 'active_model_serializers', git: 'https://github.com/rails-api/active_model_serializers'
+gem 'rack-cors', require: "rack/cors"
+
